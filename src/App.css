@@ -1,3 +1,14 @@
+:root {
+  --violet: #5a58c6;
+  --black: #0F0C0C;
+  --matt-black: #1A1818;
+  --dark-gray: #454343;
+  --gray:#cacaca;
+  --hl: #707070;
+  --vl: #1A1818;
+  --vl2: #454343;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +17,7 @@
 
 .main_container {
   width: 100%;
-  background-color: #0F0C0C;
+  background-color: var(--black);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -14,18 +25,20 @@
 }
 
 .logo > img {
-  width: 300px;
+  width: 200px;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
-  background-color: #0F0C0C;
+  background-color: var(--black);
   padding: 40px 40px 40px 40px;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  height: 20vh;
+  width: 80vw;
 }
 .nav_items {
-  background-color: #0F0C0C;
+  background-color:var(--black);
   display: flex;
   flex-direction: row;
   width: 50vw;
@@ -36,7 +49,7 @@
 
 .nav_items > a {
   text-decoration: none;
-  color: #cacaca;
+  color: var(--gray);
   font-weight: 100;
   font-size: 15px;
 }
@@ -47,14 +60,14 @@
 
 .vl {
   position: absolute;
-  border-left: 2px solid #1A1818;
+  border-left: 2px solid var(--matt-black);
   top: 11vh;
   height: 600px;
 }
 
 .vl2{
   position: absolute;
-  border-left: 4px solid #454343;
+  border-left: 4px solid var(--dark-gray);
   height: 230px;
   top: 75vh;
 }
@@ -105,12 +118,12 @@
 .title > p {
   font-size: 55px;
   font-weight: 400;
-  color: #ED732E;
+  color: var(--violet);
 }
 
 .hl {
   position: absolute;
-  border-bottom: 5px solid #707070;
+  border-bottom: 5px solid var(--hl);
   width: 110px;
   top: 58vh;
   border-radius: 5px;
@@ -171,17 +184,21 @@
 @media (max-width: 768px) {
   .main_container {
     width: 100%;
-    background-color: #0F0C0C;
+    background-color: var(--black);
     height: 100vh;
   }
 
   .navbar {
     position: relative;
-    background-color: #0F0C0C;
+    background-color: var(--black);
+    height: 15vh;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 13px 2px;
   }
 
   .logo > img {
-    width: 220px;
+    width: 150px;
   }
 
   .title {
@@ -236,26 +253,25 @@
   .title > p {
     font-size: 30px;
     font-weight: 300;
-    color: #ED732E;
+    color: var(--violet);
   }
 
   .vl {
     position: absolute;
-    border-left: 2px solid #1A1818;
+    border-left: 2px solid var(--vl);
     top: 11vh;
     height: 100vh;
   }
-
   .vl2{
     position: absolute;
-    border-left: 3px solid #454343;
+    border-left: 3px solid var(--vl2);
     height: 200px;
     top: 50vh;
   }
 
   .hl {
     position: absolute;
-    border-bottom: 5px solid #707070;
+    border-bottom: 5px solid var(--hl);
     width: 110px;
     top: 32vh;
     left: 37vw;
@@ -312,7 +328,7 @@
   .nav_items {
     position: absolute;
     top: 9.5vh;
-    background: #0F0C0C;
+    background: var(--black);
     display: flex;
     flex-direction: column;
     width: 90vw;
@@ -323,6 +339,7 @@
 
   .nav_items.open {
     transform: translateX(0) !important;
+    padding-left: 3.5vw;
   }
   .nav_toggle {
     display: grid !important;
@@ -331,10 +348,10 @@
     margin: 15px;
   }
   .nav_toggle span {
-    width: 30px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     background: white;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     border-radius: 2px;
     transform-origin: 5px 0px;
     transition: all 0.2s linear;
