@@ -1,38 +1,368 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_container {
+  width: 100%;
+  background-color: #0F0C0C;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+}
+
+.logo > img {
+  width: 300px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #0F0C0C;
+  padding: 40px 40px 40px 40px;
+  justify-content: space-evenly;
+}
+.nav_items {
+  background-color: #0F0C0C;
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  justify-content: space-around;
+  padding-top: 25px;
+  
+}
+
+.nav_items > a {
+  text-decoration: none;
+  color: #cacaca;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.nav_toggle {
+  display: none;
+}
+
+.vl {
+  position: absolute;
+  border-left: 2px solid #1A1818;
+  top: 11vh;
+  height: 600px;
+}
+
+.vl2{
+  position: absolute;
+  border-left: 4px solid #454343;
+  height: 230px;
+  top: 75vh;
+}
+
+.title {
+  position: absolute;
+  text-align: center;
+  top: 30vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title > h1 {
+  font-size: 60px;
+  font-weight: 300;
+  animation-name: mainTitle;
+  animation-duration: 1s;
+  position: relative;
+  animation-timing-function: ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes mainTitle {
+  0% {
+    top: -8rem;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    top: 0px;
+  }
+}
+
+.title > p {
+  font-size: 60px;
+  font-weight: 300;
+  animation-name: titlep;
+  animation-duration: 1.1s;
+  position: relative;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes titlep {
+  0% {
+    top: -5rem;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.title > p {
+  font-size: 55px;
+  font-weight: 400;
+  color: #ED732E;
+}
+
+.hl {
+  position: absolute;
+  border-bottom: 5px solid #707070;
+  width: 110px;
+  top: 58vh;
+  border-radius: 5px;
+  animation-name: hl;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes hl {
+  0% {
+    top: 45vh;
+  }
+  100% {
+    top: 58vh;
+  }
+}
+
+.company {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30rem;
+  top: 65vh;
+}
+
+.company > img {
+  height: 28px;
+  animation-name: company;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+@keyframes company {
+  0% {
+    height: 0px;
+  }
+  50%{
+    height: 30px;
+  }
+  60%{
+    height: 28px;
+  }
+  70% {
+    height: 30px;
+  }
+  80% {
+    height: 28px;
+  }
+  92% {
+    height: 30px;
+  }
+  100%{
+    height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_container {
+    width: 100%;
+    background-color: #0F0C0C;
+    height: 100vh;
+  }
+
+  .navbar {
+    position: relative;
+    background-color: #0F0C0C;
+  }
+
+  .logo > img {
+    width: 220px;
+  }
+
+  .title {
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+  }
+
+  .title > h1 {
+    font-size: 60px;
+    font-weight: 300;
+    animation-name: mainTitle;
+    animation-duration: 1s;
+    position: relative;
+    animation-timing-function: ease-in-out;
+    top: -10vh;
+  }
+  
+  @keyframes mainTitle {
+    0% {
+      top: -20vh;
+    }
+    100% {
+      top: -10vh;
+    }
+  }
+  
+  .title > p {
+    font-size: 60px;
+    font-weight: 300;
+    animation-name: titlep;
+    animation-duration: 1.1s;
+    position: relative;
+    animation-timing-function: ease-in-out;
+    top: -10vh;
+  }
+  
+  @keyframes titlep {
+    0% {
+      top: -15vh;
+    }
+    100% {
+      top: -10vh;
+    }
+  }
+
+  .title > h1 {
+    font-size: 30px;
+    font-weight: 200;
+  }
+  
+  .title > p {
+    font-size: 30px;
+    font-weight: 300;
+    color: #ED732E;
+  }
+
+  .vl {
+    position: absolute;
+    border-left: 2px solid #1A1818;
+    top: 11vh;
+    height: 100vh;
+  }
+
+  .vl2{
+    position: absolute;
+    border-left: 3px solid #454343;
+    height: 200px;
+    top: 50vh;
+  }
+
+  .hl {
+    position: absolute;
+    border-bottom: 5px solid #707070;
+    width: 110px;
+    top: 32vh;
+    left: 37vw;
+    border-radius: 5px;
+    animation-name: hl;
+    animation-duration: 1.1s;
+    animation-timing-function: ease-in-out;
+  } 
+  
+  @keyframes hl {
+    0% {
+      top: 15vh;
+    }
+    100% {
+      top: 32vh;
+    }
+  }
+  .company {
+    width: 20rem;
+    left: 42vw;
+  }
+  .company > img {
+    height: 20px;
+    animation-name: company;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+  }
+  
+  @keyframes company {
+    0% {
+      height: 0px;
+    }
+    50%{
+      height: 22px;
+    }
+    60%{
+      height: 20px;
+    }
+    70% {
+      height: 22px;
+    }
+    80% {
+      height: 20px;
+    }
+    
+    92% {
+      height: 20px;
+    }
+    95% {
+      height: 22px;
+    }
+  }
+
+  .nav_items {
+    position: absolute;
+    top: 9.5vh;
+    background: #0F0C0C;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 40vh;
+    transform: translateX(-100%);
+    transition: 0.3 ease all;
+  }
+
+  .nav_items.open {
+    transform: translateX(0) !important;
+  }
+  .nav_toggle {
+    display: grid !important;
+    align-content: baseline;
+    height: 0px;
+    margin: 15px;
+  }
+  .nav_toggle span {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+    left: -10vw;
+  }
+  .nav_toggle.open > span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+  .nav_toggle.open > span:nth-child(2) {
+    display: none;
+  }
+  .nav_toggle.open > span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px,1px);
+  }
+
+  .company > img {
+    position: relative;
+    left: -35vw;
+    top: -27vh;
+  }
+
+  .title.open{
+    display: none;
+  }
+  .hl.open {
+    display: none;
+  }
+  .company.open {
+    display: none;
   }
 }

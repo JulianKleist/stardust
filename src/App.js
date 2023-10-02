@@ -1,25 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react';
+import logo from './assets/logo.png';
+// import databiz from './images/client-databiz.svg';
+// import maker from './images/client-maker.svg';
+// import meet from './images/client-meet.svg';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+     <div className='main_container'>
+       <div className='navbar'>
+        <div className='logo'>
+          <img src={logo} alt='logo'/>
+        </div>
+        <div className={`nav_items ${isOpen && "open"}`}>
+          <a href='#'>DGC</a>
+          <a href='#'>SERVICES</a>
+          <a href='#'>ECOMMERCE</a>
+          <a href='#'>CUSTOMERS</a>
+          <a href='#'>BLOG</a>
+          <a href='#'>CONTACT</a>
+        </div>
+        <div className={`nav_toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div className='vl'></div>
+      <div className='vl2'></div>
+      <div className={`hl ${isOpen && "open"}`}></div>
+      <div className={`title ${isOpen && "open"}`}>
+        <h1 >Performance Digital</h1>
+        <p>completamente a Resultado.</p>
+      </div>
+      <div className={`company ${isOpen && "open"}`}>
+        {/* <img src={databiz}/>
+        <img src={maker}/>
+        <img src={meet}/> */}
+      </div>
+     </div>
+    );
 }
 
 export default App;
