@@ -36,6 +36,33 @@ function App() {
         <img src="http://placehold.it/100x100"></img>
         <img src="http://placehold.it/100x100"></img>
       </div>
+      <div className='empresas'>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <div>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+        </div>
+        <div>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+        </div>
+        <div>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+        </div>
+        <div>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+          <img src="http://placehold.it/120x120"></img>
+        </div>
+      </div>
      </div>
     );
 }
