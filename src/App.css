@@ -67,7 +67,7 @@
   position: absolute;
   border-left: 2px solid var(--matt-black);
   top: 11vh;
-  height: 600px;
+  height: 6000px;
 }
 
 .vl2{
@@ -81,7 +81,7 @@
   position: absolute;
   text-align: center;
   top: 25vh;
-  height: 0vh;
+  height: 0;
   color: white;
 }
 
@@ -215,6 +215,48 @@
   justify-content: space-between;
 }
 
+.empresas > h2 {
+  font-weight: 300;
+}
+
+.second_title {
+  position: absolute;
+  top: 250vh;
+  color: white;
+  text-align: center;
+}
+
+.second_title > h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.second_title > p {
+  font-size: 55px;
+  font-weight: 400;
+  color: var(--violet);
+}
+
+.hl2 {
+  position: absolute;
+  border-bottom: 5px solid var(--hl);
+  width: 110px;
+  top: 275vh;
+  border-radius: 5px;
+}
+
+.second_text {
+  position: absolute;
+  top: 280vh;
+  width: 48vw;
+}
+
+.second_text > p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
 @media (max-width: 768px) {
   .main_container {
     width: 100%;

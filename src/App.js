@@ -62,6 +62,15 @@ function App() {
           <img src="http://placehold.it/120x120"></img>
           <img src="http://placehold.it/120x120"></img>
         </div>
+        <h2>+80 clientes: USA, Latam y Europa.</h2>
+      </div>
+      <div className='second_title'>
+        <h2>Somos un verdadero</h2>
+        <p>socio para crecer.</p>
+      </div>
+      <div className='hl2'></div>
+      <div className='second_text'>
+        <p>Somos responsables del éxito de decenas de compañías que escalaron sus ventas en los últimos 3 años de forma agresiva y sin descanso. Hoy nuestra agenda de trabajo está completa con clientes de todo LATAM y USA que buscan esos mismos resultados. ¿Por qué? Simplemente porque nacimos para generar resultado.</p>
       </div>
      </div>
     );
