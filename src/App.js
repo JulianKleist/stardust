@@ -1,9 +1,6 @@
 import './App.css';
 import React, {useState} from 'react';
 import logo from './assets/logo.png';
-// import databiz from './images/client-databiz.svg';
-// import maker from './images/client-maker.svg';
-// import meet from './images/client-meet.svg';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,9 +32,9 @@ function App() {
         <p>completamente a Resultado.</p>
       </div>
       <div className={`company ${isOpen && "open"}`}>
-        {/* <img src={databiz}/>
-        <img src={maker}/>
-        <img src={meet}/> */}
+        <img src="http://placehold.it/100x100"></img>
+        <img src="http://placehold.it/100x100"></img>
+        <img src="http://placehold.it/100x100"></img>
       </div>
      </div>
     );

@@ -146,38 +146,43 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 30rem;
-  top: 65vh;
+  width: 20rem;
+  top: 62vh;
+  height: 70px;
 }
 
 .company > img {
-  height: 28px;
+  /* height: 28px; */
   animation-name: company;
   animation-duration: 3s;
   animation-timing-function: ease;
+  border-radius: 50%;
 }
 
 @keyframes company {
   0% {
-    height: 0px;
+    height: 50px;
   }
   50%{
-    height: 30px;
+    height: 100px;
   }
   60%{
-    height: 28px;
+    height: 90px;
   }
   70% {
-    height: 30px;
+    height: 100px;
   }
   80% {
-    height: 28px;
+    height: 90px;
   }
   92% {
-    height: 30px;
+    height: 100px;
+  }
+  95% {
+    height: 95px;
   }
   100%{
-    height: 28px;
+    height: 100px;
   }
 }
 
@@ -290,11 +295,17 @@
     }
   }
   .company {
-    width: 20rem;
-    left: 42vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    top: 35vh;
+    height: 70px;
+    background-color: aqua;
   }
   .company > img {
-    height: 20px;
+    height: 50px;
     animation-name: company;
     animation-duration: 2s;
     animation-timing-function: ease;
