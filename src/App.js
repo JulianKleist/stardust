@@ -4,6 +4,7 @@ import logo from './assets/logo.png';
 import VideoPlayer from './components/VideoPlayer';
 import StdButton from './components/std-button';
 import Vl2 from './components/vl2';
+import ImageExpandable from './components/images';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -101,6 +102,19 @@ function App() {
         <h2 >Casos de éxito reales</h2>
         <p>Todos nuestros clientes en las primeras 12 semanas experimentan un crecimiento enorme en sus ventas. Te presentamos alguno de nuestros casos de éxito, con capturas de pantalla de sus cuentas publicitarias.
 100% Resultados reales que podemos mostrarte en una llamada.</p>
+      </div>
+      <div className='images'>
+        <ImageExpandable src="http://placehold.it/600x300" width="1000px" height="500px" />
+      </div>
+      <Vl2 VlTop={"910vh"} />
+      <div className='consultoria'>
+        <h2 >Consultoría gratuita</h2>
+        <p>Agenda una videollamada de diagnóstico y consultoría totalmente gratuita. Nuestros especialistas realizarán un diagnóstico y te brindará una evaluación de posibles alterativas para tu plan de crecimiento!</p>
+      </div>
+      <div className='hl4'></div>
+      <div className='calendly'>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/ejirouweghrepha"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
       </div>
      </div>
     );

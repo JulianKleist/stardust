@@ -67,7 +67,7 @@
   position: absolute;
   border-left: 2px solid var(--matt-black);
   top: 11vh;
-  height: 6000px;
+  height: 9000px;
 }
 
 .title {
@@ -330,6 +330,49 @@
   z-index: 1;
 }
 
+.images {
+  width: 80vw;
+  height: auto;
+}
+
+.consultoria {
+  position: relative;
+  color: white;
+  top: 630vh;
+  text-align: center;
+  width: 68vw;
+}
+
+.consultoria > h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.consultoria > p {
+  margin-top: 10vh;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.hl4 {
+  position: absolute;
+  border-bottom: 5px solid var(--hl);
+  width: 110px;
+  top: 966vh;
+  border-radius: 5px;
+}
+
+.calendly {
+  position: relative;
+  top: 648vh;
+}
+
+.calendly-inline-widget {
+  min-width: 320px;
+  height: 630px;
+  background-color: white;
+}
+
 @media (max-width: 768px) {
   .main_container {
     width: 100%;
@@ -404,12 +447,6 @@
     border-left: 2px solid var(--vl);
     top: 11vh;
     height: 100vh;
-  }
-  .vl2{
-    position: absolute;
-    border-left: 3px solid var(--vl2);
-    height: 200px;
-    top: 45vh;
   }
 
   .hl {
