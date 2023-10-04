@@ -1,0 +1,15 @@
+.stdButton {
+    height: 50px;
+    min-width: 200px;
+    padding: 10px 40px;
+    border: 1px solid #747272;
+    position: absolute;
+    top: 390vh;
+    text-align: center;
+}
+
+.stdButton > p {
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+}
