@@ -6,7 +6,7 @@ class StdButton extends React.Component {
     const { stdText, StdTop } = this.props;
 
     return (
-      <div className='stdButton' style={{top: StdTop}}>
+      <div className='stdButton' style={{top: StdTop}} data-aos="fade-up" data-aos-duration="1500">
         <p>{stdText}</p>
       </div>
     );

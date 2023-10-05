@@ -81,38 +81,38 @@
 .title > h1 {
   font-size: 60px;
   font-weight: 300;
-  animation-name: mainTitle;
-  animation-duration: 1s;
+  /* animation-name: mainTitle;
+  animation-duration: 1s; */
   position: relative;
-  animation-timing-function: ease-in-out;
+  /* animation-timing-function: ease-in-out; */
 }
 
-@keyframes mainTitle {
+/* @keyframes mainTitle {
   0% {
     top: -8rem;
   }
   100% {
     top: 0px;
   }
-}
+} */
 
 .title > p {
   font-size: 60px;
   font-weight: 300;
-  animation-name: titlep;
-  animation-duration: 1.1s;
+  /* animation-name: titlep;
+  animation-duration: 1.1s; */
   position: relative;
-  animation-timing-function: ease-in-out;
+  /* animation-timing-function: ease-in-out; */
 }
 
-@keyframes titlep {
+/* @keyframes titlep {
   0% {
     top: -5rem;
   }
   100% {
     top: 0px;
   }
-}
+} */
 
 .title > p {
   font-size: 55px;
@@ -126,19 +126,19 @@
   width: 110px;
   top: 52vh;
   border-radius: 5px;
-  animation-name: hl;
+  /* animation-name: hl;
   animation-duration: 1.1s;
-  animation-timing-function: ease-in-out;
-}
+  animation-timing-function: ease-in-out;*/
+} 
 
-@keyframes hl {
+/* @keyframes hl {
   0% {
     top: 45vh;
   }
   100% {
     top: 58vh;
   }
-}
+} */
 
 .company {
   position: absolute;
@@ -151,13 +151,13 @@
 }
 
 .company > img {
-  animation-name: company;
+  /* animation-name: company;
   animation-duration: 3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease; */
   border-radius: 50%;
 }
 
-@keyframes company {
+/* @keyframes company {
   0% {
     height: 50px;
   }
@@ -182,35 +182,7 @@
   100%{
     height: 100px;
   }
-}
-.empresas {
-  color: white;
-  position: relative;
-  top: 120vh;
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.empresas > h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.empresas > div {
-  width: 60%;
-  margin-top: 3vh;
-  margin-bottom: 5vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.empresas > h2 {
-  font-weight: 300;
-}
+} */
 
 .second_title {
   position: absolute;
@@ -234,7 +206,7 @@
   position: absolute;
   border-bottom: 5px solid var(--hl);
   width: 110px;
-  top: 275vh;
+  top: 274vh;
   border-radius: 5px;
 }
 
@@ -254,7 +226,7 @@
 .video-description {
   color: var(--gray);
   position: relative;
-  top: 260vh;
+  top: 267vh;
   font-size: 20px;
   font-weight: 200;
 }
@@ -281,7 +253,7 @@
   position: absolute;
   border-bottom: 5px solid var(--hl);
   width: 110px;
-  top: 506vh;
+  top: 490vh;
   border-radius: 5px;
 }
 
@@ -358,7 +330,7 @@
   position: absolute;
   border-bottom: 5px solid var(--hl);
   width: 110px;
-  top: 966vh;
+  top: 1000vh;
   border-radius: 5px;
 }
 
@@ -390,7 +362,7 @@
   position: absolute;
   border-bottom: 5px solid var(--hl);
   width: 110px;
-  top: 1130vh;
+  top: 1170vh;
   border-radius: 5px;
 }
 
