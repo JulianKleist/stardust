@@ -8,6 +8,15 @@
     text-align: center;
 }
 
+.stdButton:hover {
+    background-color: var(--violet);
+}
+
+.stdButton:hover > p {
+    background-color: var(--violet);
+}
+
+
 .stdButton > p {
     color: white;
     font-size: 20px;

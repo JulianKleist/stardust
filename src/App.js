@@ -5,10 +5,10 @@ import VideoPlayer from './components/VideoPlayer';
 import StdButton from './components/std-button';
 import Vl2 from './components/vl2';
 import ImageExpandable from './components/images';
+import Blog from './components/blog';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
-  const parametro = 'SOLICITAR PRESUPUESTO'
   const VideoTop = '570vh'
   const VideoWidth = "560"
   const VideoHeight = "315"
@@ -84,7 +84,7 @@ function App() {
       </div>
       <VideoPlayer VideoWidth={"560"} VideoHeight={VideoHeight}/>
       <p className='video-description'>Lorem ipsum dolor sit amet</p>
-      <StdButton parametro={parametro}/>
+      <StdButton stdText={'SOLICITAR PRESUPUESTO'}/>
       <Vl2 VlTop={"410vh"} />
       <div className='third_title'>
         <h2>Nuestra oferta</h2>
@@ -116,6 +116,12 @@ function App() {
         <div class="calendly-inline-widget" data-url="https://calendly.com/ejirouweghrepha"></div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
       </div>
+      <di className="blog">
+        <h2>Nuestro Blog</h2>
+      </di>
+      <div className='hl5'></div>
+      <Blog />
+      <StdButton stdText={"VISITAR BLOG"} StdTop={"1220vh"}/>
      </div>
     );
 }

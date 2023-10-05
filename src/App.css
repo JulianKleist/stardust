@@ -67,7 +67,7 @@
   position: absolute;
   border-left: 2px solid var(--matt-black);
   top: 11vh;
-  height: 9000px;
+  height: 10500px;
 }
 
 .title {
@@ -371,6 +371,27 @@
   min-width: 320px;
   height: 630px;
   background-color: white;
+}
+
+.blog {
+  position: relative;
+  color: white;
+  top: 680vh;
+  text-align: center;
+  width: 68vw;
+}
+
+.blog > h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.hl5 {
+  position: absolute;
+  border-bottom: 5px solid var(--hl);
+  width: 110px;
+  top: 1130vh;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {

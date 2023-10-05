@@ -1,0 +1,31 @@
+.Blog {
+    position: relative;
+    top: 700vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog_container {
+    height: 77vh;
+    width: 400px;
+    background-color: black;
+    color: white;
+}
+
+.blog_container > h2{
+    padding: 15px;
+    background-color: black;
+}
+
+.blog_container > p{
+    padding: 15px;
+    background-color: black;
+}
+
+.blog_container > a{
+    position: absolute;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: black;
+}

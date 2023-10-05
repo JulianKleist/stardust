@@ -3,11 +3,11 @@ import './std-button.css'
 
 class StdButton extends React.Component {
   render() {
-    const { parametro } = this.props;
+    const { stdText, StdTop } = this.props;
 
     return (
-      <div className='stdButton'>
-        <p>{parametro}</p>
+      <div className='stdButton' style={{top: StdTop}}>
+        <p>{stdText}</p>
       </div>
     );
   }
