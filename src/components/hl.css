@@ -1,5 +1,5 @@
 .hl {
-    position: absolute;
+    position: relative;
     border-bottom: 5px solid var(--hl);
     width: 110px;
     /* top: 490vh; */

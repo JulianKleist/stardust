@@ -5,8 +5,6 @@ import './empresas.css'
 
 class Empresas extends React.Component {
   render() {
-    // const {  } = this.props;
-
     return (
         <div className='empresas'>
             <h2 data-aos="fade-in" data-aos-duration="2000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
