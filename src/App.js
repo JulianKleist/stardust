@@ -14,8 +14,6 @@ import 'aos/dist/aos.css';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
-  const VideoTop = '570vh'
-  const VideoHeight = "315"
   useEffect(() => {
     AOS.init();
   }, []);
@@ -102,7 +100,7 @@ function App() {
       </di>
       <Hl StdTop={"1052rem"}/>
       <Blog />
-      {/* <StdButton stdText={"VISITAR BLOG"} StdTop={"705vh"}/> */}
+      <StdButton stdText={"VISITAR BLOG"} StdTop={"1100"}/>
      </div>
     );
 }

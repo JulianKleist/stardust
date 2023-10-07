@@ -73,7 +73,7 @@ html {
   position: absolute;
   border-left: 2px solid var(--matt-black);
   top: 11vh;
-  height: 9800px;
+  height: 2000rem;
 }
 
 .title {
@@ -290,8 +290,161 @@ html {
   border-radius: 5px;
 }
 
+.main_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black);
+}
+
+.navbar {
+  background-color: var(--black);
+  height: 10.5rem;
+  width: 100%;
+  justify-content: space-between;
+  padding: 13px 5px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.logo > img {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 18rem;
+}
+
+.title > h1 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.title > p {
+  font-size: 60px;
+  font-weight: 300;
+  top: -10vh;
+}
+
+.title > h1 {
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.title > p {
+  font-size: 3em;
+  font-weight: 300;
+  color: var(--violet);
+}
+
+.vl {
+  position: absolute;
+  border-left: 2px solid var(--vl);
+  top: 11vh;
+  height: 1200rem;
+}
+
+.hl {
+  border-bottom: 5px solid var(--hl);
+  width: 110px;
+  border-radius: 5px;
+  z-index: 1;
+} 
+.company {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80vw;
+  top: 30rem;
+  height: 8rem;
+}
+
+.nav_items {
+  position: absolute;
+  top: 9.5vh;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 40vh;
+  transform: translateX(-100%);
+  transition: 0.3 ease all;
+}
+
+.nav_items.open {
+  transform: translateX(0) !important;
+  padding-left: 3.5vw;
+}
+.nav_toggle {
+  display: grid !important;
+  align-content: baseline;
+  height: 0px;
+  margin: 15px;
+}
+.nav_toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin-bottom: 3px;
+  border-radius: 2px;
+  transform-origin: 5px 0px;
+  transition: all 0.2s linear;
+  left: -10vw;
+}
+.nav_toggle.open > span {
+  transform: rotate(45deg) translate(0px, 0px);
+}
+.nav_toggle.open > span:nth-child(2) {
+  display: none;
+}
+.nav_toggle.open > span:nth-child(3) {
+  transform: rotate(-45deg) translate(-5px,1px);
+}
+
+.company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.title.open{
+  display: none;
+}
+.hl.open {
+  display: none;
+}
+.company.open {
+  display: none;
+}
+
+.empresas {
+  top: 60vh;
+}
+
+.empresas > div {
+  height: 70vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empresas > img {
+  top: 15px;
+}
+
 @media (max-width: 768px) {
-  .main_container {
+  /* .main_container {
     width: 100%;
     height: auto;
     display: flex;
@@ -302,7 +455,7 @@ html {
 
   .navbar {
     /* position: relative; */
-    background-color: var(--black);
+    /* background-color: var(--black);
     height: 10.5rem;
     width: 100%;
     justify-content: space-between;
@@ -354,13 +507,13 @@ html {
     height: 1200rem;
   }
 
-  .hl {
+  .hl { */
     /* position: absolute; */
-    border-bottom: 5px solid var(--hl);
-    width: 110px;
+    /* border-bottom: 5px solid var(--hl);
+    width: 110px; */
     /* top: 28vh; */
     /* left: 37vw; */
-    border-radius: 5px;
+    /*border-radius: 5px;
     z-index: 1;
   } 
   .company {
@@ -446,5 +599,20 @@ html {
 
   .empresas > img {
     top: 15px
+  } */
+}
+
+@media (min-width: 768px) {
+  .logo > img {
+    width: 200px;
+  }
+
+  .title > h1 {
+    font-size: 4em;
+  }
+  
+  .title > p {
+    font-size: 4em;
+    color: var(--violet);
   }
 }

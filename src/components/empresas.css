@@ -38,3 +38,15 @@
 .empresas_items {
     height: 280rem;
 }
+
+@media (min-width: 768px) {
+    .empresas > div {
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 53px;
+        padding: 0;
+    }
+    .empresas {
+        height: 80rem;
+    }
+}
