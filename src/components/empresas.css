@@ -1,8 +1,10 @@
 .empresas {
     color: white;
-    position: relative;
-    top: 120vh;
-    width: 80vw;
+    position: absolute;
+    top: 76rem;
+    width: auto;
+    padding: 0 3.5rem;
+    height: 290rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,6 +13,9 @@
 .empresas > h2 {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    top: 1rem;
 }
 
 .empresas > div {
@@ -18,12 +23,18 @@
     margin-top: 3vh;
     margin-bottom: 5vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 55px;
-    column-gap: 15px;
+    grid-template-columns: 1fr;
+    row-gap: 53px;
     justify-items: center;
+    height: auto;
 }
 
-.empresas > h2 {
+.empresas > h2:nth-child(2) {
+    position: absolute;
     font-weight: 300;
+    top: 279rem;
+}
+
+.empresas_items {
+    height: 280rem;
 }

@@ -3,8 +3,7 @@
     min-width: 200px;
     padding: 10px 40px;
     border: 1px solid #747272;
-    position: relative;
-    /* top: 390vh; */
+    position: absolute;
     text-align: center;
 }
 
