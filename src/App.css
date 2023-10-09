@@ -198,6 +198,14 @@ html {
   width: 80%;
 }
 
+/* .video_container {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  left: 50vw;
+} */
+
 .casos {
   position: absolute;
   color: white;
@@ -245,7 +253,7 @@ html {
 }
 
 .consultoria > p {
-  margin-top: 10vh;
+  margin-top: 9rem;
   font-size: 2em;
   font-weight: 300;
 }
@@ -614,5 +622,37 @@ html {
   .title > p {
     font-size: 4em;
     color: var(--violet);
+  }
+
+  .second_title {
+    top: 158rem;
+  }
+  
+  .second_text {
+    top: 173rem;
+  }
+
+  .second_text {
+    width: 95%;
+  }
+
+  .second_text > p {
+    font-size: 2rem;
+  }
+
+  .video-description {
+    top: 230rem;
+  }
+
+  .third_title {
+    top: 285rem;
+  }
+  .third_text {
+    top: 304rem;
+    width: 90%;
+  }
+  
+  .third_text > p {
+    font-size: 2rem;
   }
 }

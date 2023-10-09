@@ -17,6 +17,8 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const esPantallaMediano = window.innerWidth >= 768;
   return (
      <div className='main_container'>
        <div className='navbar'>
@@ -54,25 +56,27 @@ function App() {
         <h2 data-aos="fade-down" data-aos-duration="1500">Somos un verdadero</h2>
         <p data-aos="fade-down" data-aos-duration="2000">socio para crecer.</p>
       </div>
-      <Hl StdTop={"378rem"}/>
+      <Hl StdTop={esPantallaMediano ? '168rem' : '378rem'}/>
       <div className='second_text'>
         <p data-aos="fade-down" data-aos-duration="1500">Somos responsables del éxito de decenas de compañías que escalaron sus ventas en los últimos 3 años de forma agresiva y sin descanso. Hoy nuestra agenda de trabajo está completa con clientes de todo LATAM y USA que buscan esos mismos resultados. ¿Por qué? Simplemente porque nacimos para generar resultado.</p>
       </div>
-      <VideoPlayer VideoWidth={"350px"} VideoHeight={"200rem"} VideoTop={"405rem"}/>
+      <VideoPlayer VideoWidth={esPantallaMediano ? '630px' : '350px'} VideoHeight={esPantallaMediano ? '350rem' : '200rem'} VideoTop={esPantallaMediano ? '192rem' : '405rem'}/>
       <p className='video-description' data-aos="fade-in" data-aos-duration="2000">Lorem ipsum dolor sit amet</p>
-      <StdButton stdText={'SOLICITAR PRESUPUESTO'} StdTop={"444rem"}/>
-      <Vl2 VlTop={"455rem"} />
+      <StdButton stdText={'SOLICITAR PRESUPUESTO'} StdTop={esPantallaMediano ? '245rem' : '444rem'}/>
+      <Vl2 VlTop={esPantallaMediano ? '255rem' : '455rem'} />
       <div className='third_title'>
         <h2 data-aos="fade-down" data-aos-duration="1500">Nuestra oferta</h2>
         <p data-aos="fade-down" data-aos-duration="2000">es simple y sencilla.</p>
       </div>
-      <Hl StdTop={"495rem"}/>
+      <Hl StdTop={esPantallaMediano ? '296rem' : '495rem'}/>
       <div className='third_text'>
         <p data-aos="fade-down" data-aos-duration="2000">Conectamos a tu empresa un equipo AAA compuesto por especialistas en Paid Ads, Data Analytics, Publicidad, Diseño y Copywriting. Nuestro equipo pondrá en marcha nuestro framework de trabajo, el mismo que venimos corriendo para todos nuestros casos de éxito. En menos de doce semanas vas a experimentar un crecimiento significativo en tu facturación junto con un aumento en la notoriedad. ¿Qué garantía tenes? Más allá de nuestra extensa cartera de casos de éxito en comercio electrónico proponemos una modalidad única en donde si no vendés no pagás, vamos variabilizados completamente.</p>
       </div>
-      <VideoPlayer VideoWidth={"350px"} VideoHeight={"200rem"} VideoTop={"534rem"}/>
-      <VideoPlayer VideoWidth={"350px"} VideoHeight={"200rem"} VideoTop={"558rem"}/>
-      <VideoPlayer VideoWidth={"350px"} VideoHeight={"200rem"} VideoTop={"582rem"}/>
+      {/* <div className='video_container'> */}
+        <VideoPlayer VideoWidth={"350px"} VideoHeight={"200rem"} VideoTop={"534rem"}/>
+        <VideoPlayer VideoWidth={"350px"} VideoHeight={"200rem"} VideoTop={"558rem"}/>
+        <VideoPlayer VideoWidth={"350px"} VideoHeight={"200rem"} VideoTop={"582rem"}/>
+      {/* </div> */}
       <Vl2 VlTop={"610rem"} />
       <div className='casos'>
         <h2 data-aos="fade-down" data-aos-duration="2000">Casos de éxito reales</h2>
