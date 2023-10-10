@@ -73,7 +73,7 @@ html {
   position: absolute;
   border-left: 2px solid var(--matt-black);
   top: 11vh;
-  height: 2000rem;
+  height: 500rem;
 }
 .vertical_line {
   position: absolute;
