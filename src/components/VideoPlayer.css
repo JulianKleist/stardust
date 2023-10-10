@@ -1,4 +1,7 @@
 .video-player {
-    position: absolute;
-    /* top: 325vh; */
-  }
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  
+} 

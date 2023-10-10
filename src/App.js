@@ -8,6 +8,7 @@ import ImageExpandable from './components/images';
 import Blog from './components/blog';
 import Empresas from './components/empresas';
 import Hl from './components/hl';
+import Footer from './components/footer';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -72,29 +73,41 @@ function App() {
       <div className='third_text'>
         <p data-aos="fade-down" data-aos-duration="2000">Conectamos a tu empresa un equipo AAA compuesto por especialistas en Paid Ads, Data Analytics, Publicidad, Diseño y Copywriting. Nuestro equipo pondrá en marcha nuestro framework de trabajo, el mismo que venimos corriendo para todos nuestros casos de éxito. En menos de doce semanas vas a experimentar un crecimiento significativo en tu facturación junto con un aumento en la notoriedad. ¿Qué garantía tenes? Más allá de nuestra extensa cartera de casos de éxito en comercio electrónico proponemos una modalidad única en donde si no vendés no pagás, vamos variabilizados completamente.</p>
       </div>
-      {/* <div className='video_container'> */}
-        <VideoPlayer VideoWidth={"350px"} VideoHeight={"200rem"} VideoTop={"534rem"}/>
-        <VideoPlayer VideoWidth={"350px"} VideoHeight={"200rem"} VideoTop={"558rem"}/>
-        <VideoPlayer VideoWidth={"350px"} VideoHeight={"200rem"} VideoTop={"582rem"}/>
-      {/* </div> */}
-      <Vl2 VlTop={"610rem"} />
+      <div className='video_container'>
+        <VideoPlayer 
+          VideoWidth={esPantallaMediano ? '220px' : '350px'}
+          VideoHeight={esPantallaMediano ? '150rem' : '200rem'}
+          VideoTop={esPantallaMediano ? '330rem' : '534rem'} 
+          VideoLeft={esPantallaMediano ? "3rem" : ""}/>
+        <VideoPlayer 
+          VideoWidth={esPantallaMediano ? '220px' : '350px'}
+          VideoHeight={esPantallaMediano ? '150rem' : '200rem'}
+          VideoTop={esPantallaMediano ? '330rem' : '558rem'} 
+          VideoLeft={esPantallaMediano ? "28rem" : ""}/>
+        <VideoPlayer 
+          VideoWidth={esPantallaMediano ? '220px' : '350px'}
+          VideoHeight={esPantallaMediano ? '150rem' : '200rem'}
+          VideoTop={esPantallaMediano ? '330rem' : '583rem'}
+          VideoLeft={esPantallaMediano ? "53rem" : ""}/>
+      </div>
+      <Vl2 VlTop={esPantallaMediano ? '354rem' : '610rem'} />
       <div className='casos'>
         <h2 data-aos="fade-down" data-aos-duration="2000">Casos de éxito reales</h2>
         <p data-aos="fade-down" data-aos-duration="2000">Todos nuestros clientes en las primeras 12 semanas experimentan un crecimiento enorme en sus ventas. Te presentamos alguno de nuestros casos de éxito, con capturas de 
           pantalla de sus cuentas publicitarias.
 100% Resultados reales que podemos mostrarte en una llamada.</p>
       </div>
-      <Hl StdTop={"652rem"}/>
+      <Hl StdTop={esPantallaMediano ? '391rem' : '652rem'}/>
       <div className='images'>
-        <ImageExpandable src="http://placehold.it/350x175" width="1000px" height="500px" />
+        <ImageExpandable src="http://placehold.it/350x175" />
       </div>
-      <Vl2 VlTop={"915rem"} />
+      <Vl2 VlTop={esPantallaMediano ? '530rem' : '900rem'} />
       <div className='consultoria'>
         <h2 data-aos="fade-down" data-aos-duration="2000">Consultoría gratuita</h2>
         <p data-aos="fade-down" data-aos-duration="2000">Agenda una videollamada de diagnóstico y consultoría totalmente gratuita. Nuestros especialistas realizarán un diagnóstico y te brindará una evaluación de posibles 
           alterativas para tu plan de crecimiento!</p>
       </div>
-      <Hl StdTop={"948rem"}/>
+      <Hl StdTop={esPantallaMediano ? '572rem' : '948rem'}/>
       <div className='calendly'>
         <div class="calendly-inline-widget" data-url="https://calendly.com/ejirouweghrepha"></div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
@@ -102,9 +115,13 @@ function App() {
       <di className="blog">
         <h2 data-aos="fade-down" data-aos-duration="3000">Nuestro Blog</h2>
       </di>
-      <Hl StdTop={"1052rem"}/>
+      <Hl StdTop={esPantallaMediano ? '704rem' : '1052rem'}/>
       <Blog />
-      <StdButton stdText={"VISITAR BLOG"} StdTop={"1100"}/>
+      <div className='vertical_line'></div>
+      <div className='horizontal_line'></div>
+      <StdButton stdText={"VISITAR BLOG"} StdTop={esPantallaMediano ? '840rem' : '1273rem'}/>
+
+      <Footer />
      </div>
     );
 }

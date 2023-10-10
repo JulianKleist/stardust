@@ -32,3 +32,18 @@
     padding: 15px;
     background-color: black;
 }
+
+@media (min-width: 768px) {
+    .Blog {
+        top: 711rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3rem;
+        margin-left: 2rem;
+    }
+
+    .blog_container {
+        height: 60rem;
+        width: 95%;
+    }
+}

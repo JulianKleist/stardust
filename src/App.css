@@ -75,6 +75,12 @@ html {
   top: 11vh;
   height: 2000rem;
 }
+.vertical_line {
+  position: absolute;
+  border-left: 2px solid var(--matt-black);
+  top: 1270rem;
+  height: 15rem;
+}
 
 .title {
   position: absolute;
@@ -198,13 +204,11 @@ html {
   width: 80%;
 }
 
-/* .video_container {
-  background-color: aqua;
+.video_container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  left: 50vw;
-} */
+  justify-content: center;
+}
 
 .casos {
   position: absolute;
@@ -235,7 +239,7 @@ html {
 }
 
 .images {
-  width: 80vw;
+  width: 100%;
   height: auto;
 }
 
@@ -451,6 +455,13 @@ html {
   top: 15px;
 }
 
+.horizontal_line {
+  position: absolute;
+  border-bottom: 2px solid var(--matt-black);
+  top: 1285rem;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   /* .main_container {
     width: 100%;
@@ -654,5 +665,43 @@ html {
   
   .third_text > p {
     font-size: 2rem;
+  }
+
+  .casos {
+    top: 385rem;
+  }
+
+  .video_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .casos {
+    top: 384rem;
+  }
+
+  .consultoria {
+    top: 565rem;
+    width: 95%;
+  }
+
+  .calendly {
+    top: 597rem;
+  }
+  
+  .calendly-inline-widget {
+    min-width: 600px;
+    height: 800px;
+  }
+  .blog {
+    top: 697rem;
+    text-align: center;
+    width: 90%;
+  }
+  
+  .blog > h2 {
+    font-size: 3em;
+    font-weight: 300;
   }
 }
