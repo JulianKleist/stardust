@@ -704,4 +704,7 @@ html {
     font-size: 3em;
     font-weight: 300;
   }
+  .horizontal_line {
+    top: 857rem;
+  }
 }
