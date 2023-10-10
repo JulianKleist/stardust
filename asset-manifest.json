@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/stardust/static/css/main.743830e8.css",
+    "main.js": "/stardust/static/js/main.ffa79189.js",
+    "static/media/logo.png": "/stardust/static/media/logo.0245f58ec552a8c603ef.png",
+    "index.html": "/stardust/index.html",
+    "main.743830e8.css.map": "/stardust/static/css/main.743830e8.css.map",
+    "main.ffa79189.js.map": "/stardust/static/js/main.ffa79189.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.743830e8.css",
+    "static/js/main.ffa79189.js"
+  ]
+}
